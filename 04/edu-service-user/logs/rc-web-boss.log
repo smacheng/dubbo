@@ -1,0 +1,279 @@
+[INFO ][20160918 23:04:09,484][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2fdaa156: startup date [Sun Sep 18 23:04:09 CST 2016]; root of context hierarchy
+[INFO ][20160918 23:04:09,837][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20160918 23:04:11,179][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+[INFO ][20160918 23:04:11,231][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/dubbo-provider.xml]
+[WARN ][20160918 23:04:11,972][SimpleSaxErrorHandler:47] Ignored XML validation warning
+org.xml.sax.SAXParseException; lineNumber: 8; columnNumber: 66; schema_reference.4: 无法读取方案文档 'http://www.springframework.org/schema/beans/spring-beans-3.2.4.xsd', 原因为 1) 无法找到文档; 2) 无法读取文档; 3) 文档的根元素不是 <xsd:schema>。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.warning(ErrorHandlerWrapper.java:99)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:433)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:347)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4166)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaWarning(XSDHandler.java:4157)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument1(XSDHandler.java:2490)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2187)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:573)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:617)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.findSchemaGrammar(XMLSchemaValidator.java:2453)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1772)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:746)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:379)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:605)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3138)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:388)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:256)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:197)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:182)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:139)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:108)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at dubbo.test.DubboProvider.main(DubboProvider.java:20)
+Caused by: java.io.FileNotFoundException: http://www.springframework.org/schema/beans/spring-beans-3.2.4.xsd
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1625)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:643)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:189)
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:582)
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:685)
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2175)
+	... 42 more
+[ERROR][20160918 23:04:12,018][DubboProvider:23] == DubboProvider context start error:
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Failed to import bean definitions from relative location [dubbo-provider.xml]
+Offending resource: class path resource [spring/spring-context.xml]; nested exception is org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 8 in XML document from class path resource [spring/dubbo-provider.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 8; columnNumber: 66; cvc-elt.1: 找不到元素 'beans' 的声明。
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:68)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:76)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:272)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:197)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:182)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:139)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:108)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at dubbo.test.DubboProvider.main(DubboProvider.java:20)
+Caused by: org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 8 in XML document from class path resource [spring/dubbo-provider.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 8; columnNumber: 66; cvc-elt.1: 找不到元素 'beans' 的声明。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:396)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:256)
+	... 20 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 8; columnNumber: 66; cvc-elt.1: 找不到元素 'beans' 的声明。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:437)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:325)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1906)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:746)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:379)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:605)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3138)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:388)
+	... 23 more
+[INFO ][20160918 23:05:53,905][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3a962da5: startup date [Sun Sep 18 23:05:53 CST 2016]; root of context hierarchy
+[INFO ][20160918 23:05:53,983][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20160918 23:05:54,295][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+[INFO ][20160918 23:05:54,337][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/dubbo-provider.xml]
+[WARN ][20160918 23:05:54,668][SimpleSaxErrorHandler:47] Ignored XML validation warning
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 107; schema_reference.4: 无法读取方案文档 'http://www.springframework.org/schema/beans/spring-beans-3.2.4.xsd', 原因为 1) 无法找到文档; 2) 无法读取文档; 3) 文档的根元素不是 <xsd:schema>。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.warning(ErrorHandlerWrapper.java:99)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:433)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:347)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4166)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaWarning(XSDHandler.java:4157)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument1(XSDHandler.java:2490)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2187)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:573)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:617)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.findSchemaGrammar(XMLSchemaValidator.java:2453)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1772)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:746)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:379)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:605)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3138)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:388)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:256)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:197)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:182)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:139)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:108)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at dubbo.test.DubboProvider.main(DubboProvider.java:20)
+Caused by: java.io.FileNotFoundException: http://www.springframework.org/schema/beans/spring-beans-3.2.4.xsd
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1625)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:643)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:189)
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:582)
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:685)
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2175)
+	... 42 more
+[ERROR][20160918 23:05:54,673][DubboProvider:23] == DubboProvider context start error:
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Failed to import bean definitions from relative location [dubbo-provider.xml]
+Offending resource: class path resource [spring/spring-context.xml]; nested exception is org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 7 in XML document from class path resource [spring/dubbo-provider.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 107; cvc-elt.1: 找不到元素 'beans' 的声明。
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:68)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:76)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:272)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:197)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:182)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:139)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:108)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at dubbo.test.DubboProvider.main(DubboProvider.java:20)
+Caused by: org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 7 in XML document from class path resource [spring/dubbo-provider.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 107; cvc-elt.1: 找不到元素 'beans' 的声明。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:396)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:256)
+	... 20 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 107; cvc-elt.1: 找不到元素 'beans' 的声明。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:437)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:325)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1906)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:746)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:379)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:605)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3138)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:388)
+	... 23 more
+[INFO ][20160918 23:08:33,430][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3a962da5: startup date [Sun Sep 18 23:08:33 CST 2016]; root of context hierarchy
+[INFO ][20160918 23:08:33,497][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20160918 23:08:33,787][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+[INFO ][20160918 23:08:33,824][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/dubbo-provider.xml]
+[INFO ][20160918 23:08:33,918][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20160918 23:08:34,291][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20160918 23:08:34,499][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@dfb0468: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,pmsUserFacade,pmsUserBiz,pmsUserDao,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sqlSessionFactory,sessionTemplate,transactionManager,gw-service-user,com.alibaba.dubbo.config.RegistryConfig,dubbo,wusc.edu.facade.user.service.PmsUserFacade,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20160918 23:08:36,784][DruidDataSource:642] {dataSource-1} inited
+[INFO ][20160918 23:08:38,083][ServiceBean:107]  [DUBBO] The service ready on spring started. service: wusc.edu.facade.user.service.PmsUserFacade, dubbo version: 2.5.0, current host: 127.0.0.1
+[INFO ][20160918 23:08:38,372][ServiceConfig:490]  [DUBBO] Export dubbo service wusc.edu.facade.user.service.PmsUserFacade to local registry, dubbo version: 2.5.0, current host: 127.0.0.1
+[INFO ][20160918 23:08:38,372][ServiceConfig:452]  [DUBBO] Export dubbo service wusc.edu.facade.user.service.PmsUserFacade to url dubbo://192.168.88.1:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&dubbo=2.5.0&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,getById,findUserByUserNo,deleteUserById,create&pid=7184&side=provider&timestamp=1474211318155, dubbo version: 2.5.0, current host: 127.0.0.1
+[INFO ][20160918 23:08:38,372][ServiceConfig:463]  [DUBBO] Register dubbo service wusc.edu.facade.user.service.PmsUserFacade url dubbo://192.168.88.1:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&dubbo=2.5.0&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,getById,findUserByUserNo,deleteUserById,create&pid=7184&side=provider&timestamp=1474211318155 to registry registry://192.168.0.11:2181/com.alibaba.dubbo.registry.RegistryService?application=gw-service-user&dubbo=2.5.0&pid=7184&registry=zookeeper&timestamp=1474211318103, dubbo version: 2.5.0, current host: 127.0.0.1
+[INFO ][20160918 23:08:38,962][AbstractServer:69]  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.88.1:20880, dubbo version: 2.5.0, current host: 127.0.0.1
+[INFO ][20160918 23:08:39,049][ZkEventThread:64] Starting ZkClient event thread.
+[INFO ][20160918 23:08:39,068][Environment:100] Client environment:zookeeper.version=3.4.5-1392090, built on 09/30/2012 17:52 GMT
+[INFO ][20160918 23:08:39,068][Environment:100] Client environment:host.name=smacheng-PC
+[INFO ][20160918 23:08:39,069][Environment:100] Client environment:java.version=1.7.0_80
+[INFO ][20160918 23:08:39,070][Environment:100] Client environment:java.vendor=Oracle Corporation
+[INFO ][20160918 23:08:39,070][Environment:100] Client environment:java.home=F:\toolsinstalldir\Java\jdk1.7.0_80\jre
+[INFO ][20160918 23:08:39,070][Environment:100] Client environment:java.class.path=E:\gitprojects\dubbo\04\edu-service-user\target\test-classes;E:\gitprojects\dubbo\04\edu-service-user\target\classes;E:\gitprojects\dubbo\04\edu-facade-user\target\classes;E:\myprojects\mytools\mymavenrepo\antlr\antlr\2.7.6\antlr-2.7.6.jar;E:\myprojects\mytools\mymavenrepo\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;E:\myprojects\mytools\mymavenrepo\org\aspectj\aspectjweaver\1.7.3\aspectjweaver-1.7.3.jar;E:\myprojects\mytools\mymavenrepo\cglib\cglib\2.2.2\cglib-2.2.2.jar;E:\myprojects\mytools\mymavenrepo\asm\asm\3.3.1\asm-3.3.1.jar;E:\myprojects\mytools\mymavenrepo\net\sf\json-lib\json-lib\2.3\json-lib-2.3-jdk15.jar;E:\myprojects\mytools\mymavenrepo\commons-lang\commons-lang\2.4\commons-lang-2.4.jar;E:\myprojects\mytools\mymavenrepo\ognl\ognl\3.0.6\ognl-3.0.6.jar;E:\myprojects\mytools\mymavenrepo\oro\oro\2.0.8\oro-2.0.8.jar;E:\myprojects\mytools\mymavenrepo\commons-beanutils\commons-beanutils\1.8.0\commons-beanutils-1.8.0.jar;E:\myprojects\mytools\mymavenrepo\commons-codec\commons-codec\1.8\commons-codec-1.8.jar;E:\myprojects\mytools\mymavenrepo\commons-collections\commons-collections\3.2\commons-collections-3.2.jar;E:\myprojects\mytools\mymavenrepo\commons-digester\commons-digester\2.0\commons-digester-2.0.jar;E:\myprojects\mytools\mymavenrepo\commons-fileupload\commons-fileupload\1.3.1\commons-fileupload-1.3.1.jar;E:\myprojects\mytools\mymavenrepo\commons-io\commons-io\2.0.1\commons-io-2.0.1.jar;E:\myprojects\mytools\mymavenrepo\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;E:\myprojects\mytools\mymavenrepo\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;E:\myprojects\mytools\mymavenrepo\commons-validator\commons-validator\1.1.4\commons-validator-1.1.4.jar;E:\myprojects\mytools\mymavenrepo\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;E:\myprojects\mytools\mymavenrepo\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;E:\myprojects\mytools\mymavenrepo\net\sf\ezmorph\ezmorph\1.0.6\ezmorph-1.0.6.jar;E:\myprojects\mytools\mymavenrepo\javassist\javassist\3.12.1.GA\javassist-3.12.1.GA.jar;E:\myprojects\mytools\mymavenrepo\jstl\jstl\1.2\jstl-1.2.jar;E:\myprojects\mytools\mymavenrepo\javax\transaction\jta\1.1\jta-1.1.jar;E:\myprojects\mytools\mymavenrepo\log4j\log4j\1.2.17\log4j-1.2.17.jar;E:\myprojects\mytools\mymavenrepo\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;E:\myprojects\mytools\mymavenrepo\org\slf4j\slf4j-log4j12\1.7.5\slf4j-log4j12-1.7.5.jar;E:\myprojects\mytools\mymavenrepo\org\springframework\spring-aop\3.2.4.RELEASE\spring-aop-3.2.4.RELEASE.jar;E:\myprojects\mytools\mymavenrepo\org\springframework\spring-aspects\3.2.4.RELEASE\spring-aspects-3.2.4.RELEASE.jar;E:\myprojects\mytools\mymavenrepo\org\springframework\spring-beans\3.2.4.RELEASE\spring-beans-3.2.4.RELEASE.jar;E:\myprojects\mytools\mymavenrepo\org\springframework\spring-context\3.2.4.RELEASE\spring-context-3.2.4.RELEASE.jar;E:\myprojects\mytools\mymavenrepo\org\springframework\spring-context-support\3.2.4.RELEASE\spring-context-support-3.2.4.RELEASE.jar;E:\myprojects\mytools\mymavenrepo\org\springframework\spring-core\3.2.4.RELEASE\spring-core-3.2.4.RELEASE.jar;E:\myprojects\mytools\mymavenrepo\org\springframework\spring-expression\3.2.4.RELEASE\spring-expression-3.2.4.RELEASE.jar;E:\myprojects\mytools\mymavenrepo\org\springframework\spring-instrument\3.2.4.RELEASE\spring-instrument-3.2.4.RELEASE.jar;E:\myprojects\mytools\mymavenrepo\org\springframework\spring-instrument-tomcat\3.2.4.RELEASE\spring-instrument-tomcat-3.2.4.RELEASE.jar;E:\myprojects\mytools\mymavenrepo\org\springframework\spring-jdbc\3.2.4.RELEASE\spring-jdbc-3.2.4.RELEASE.jar;E:\myprojects\mytools\mymavenrepo\org\springframework\spring-jms\3.2.4.RELEASE\spring-jms-3.2.4.RELEASE.jar;E:\myprojects\mytools\mymavenrepo\org\springframework\spring-orm\3.2.4.RELEASE\spring-orm-3.2.4.RELEASE.jar;E:\myprojects\mytools\mymavenrepo\org\springframework\spring-oxm\3.2.4.RELEASE\spring-oxm-3.2.4.RELEASE.jar;E:\myprojects\mytools\mymavenrepo\org\springframework\spring-struts\3.2.4.RELEASE\spring-struts-3.2.4.RELEASE.jar;E:\myprojects\mytools\mymavenrepo\struts\struts\1.2.9\struts-1.2.9.jar;E:\myprojects\mytools\mymavenrepo\xalan\xalan\2.7.1\xalan-2.7.1.jar;E:\myprojects\mytools\mymavenrepo\xalan\serializer\2.7.1\serializer-2.7.1.jar;E:\myprojects\mytools\mymavenrepo\org\springframework\spring-test\3.2.4.RELEASE\spring-test-3.2.4.RELEASE.jar;E:\myprojects\mytools\mymavenrepo\org\springframework\spring-tx\3.2.4.RELEASE\spring-tx-3.2.4.RELEASE.jar;E:\myprojects\mytools\mymavenrepo\org\springframework\spring-web\3.2.4.RELEASE\spring-web-3.2.4.RELEASE.jar;E:\myprojects\mytools\mymavenrepo\org\springframework\spring-webmvc\3.2.4.RELEASE\spring-webmvc-3.2.4.RELEASE.jar;E:\myprojects\mytools\mymavenrepo\org\springframework\spring-webmvc-portlet\3.2.4.RELEASE\spring-webmvc-portlet-3.2.4.RELEASE.jar;E:\myprojects\mytools\mymavenrepo\org\mybatis\mybatis\3.2.2\mybatis-3.2.2.jar;E:\myprojects\mytools\mymavenrepo\org\mybatis\mybatis-spring\1.2.0\mybatis-spring-1.2.0.jar;E:\myprojects\mytools\mymavenrepo\org\apache\struts\struts2-json-plugin\2.3.15.1\struts2-json-plugin-2.3.15.1.jar;E:\myprojects\mytools\mymavenrepo\org\apache\struts\struts2-convention-plugin\2.3.15.1\struts2-convention-plugin-2.3.15.1.jar;E:\myprojects\mytools\mymavenrepo\org\apache\struts\struts2-core\2.3.15.1\struts2-core-2.3.15.1.jar;E:\myprojects\mytools\mymavenrepo\org\freemarker\freemarker\2.3.19\freemarker-2.3.19.jar;E:\myprojects\mytools\mymavenrepo\org\apache\struts\struts2-spring-plugin\2.3.15.1\struts2-spring-plugin-2.3.15.1.jar;E:\myprojects\mytools\mymavenrepo\org\apache\struts\xwork\xwork-core\2.3.15.1\xwork-core-2.3.15.1.jar;E:\myprojects\mytools\mymavenrepo\asm\asm-commons\3.3\asm-commons-3.3.jar;E:\myprojects\mytools\mymavenrepo\asm\asm-tree\3.3\asm-tree-3.3.jar;E:\myprojects\mytools\mymavenrepo\org\apache\tomcat\servlet-api\6.0.37\servlet-api-6.0.37.jar;E:\myprojects\mytools\mymavenrepo\org\apache\tomcat\jsp-api\6.0.37\jsp-api-6.0.37.jar;E:\myprojects\mytools\mymavenrepo\org\apache\tomcat\el-api\6.0.37\el-api-6.0.37.jar;E:\myprojects\mytools\mymavenrepo\com\alibaba\druid\0.2.23\druid-0.2.23.jar;E:\myprojects\mytools\mymavenrepo\org\jsoup\jsoup\1.7.3\jsoup-1.7.3.jar;E:\myprojects\mytools\mymavenrepo\mysql\mysql-connector-java\5.1.32\mysql-connector-java-5.1.32.jar;E:\myprojects\mytools\mymavenrepo\org\jboss\netty\netty\3.2.5.Final\netty-3.2.5.Final.jar;E:\myprojects\mytools\mymavenrepo\com\alibaba\dubbo\2.5.0\dubbo-2.5.0.jar;E:\myprojects\mytools\mymavenrepo\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;E:\myprojects\mytools\mymavenrepo\org\apache\zookeeper\zookeeper\3.4.5\zookeeper-3.4.5.jar;E:\myprojects\mytools\mymavenrepo\jline\jline\0.9.94\jline-0.9.94.jar;E:\myprojects\mytools\mymavenrepo\com\101tec\zkclient\0.3\zkclient-0.3.jar;E:\myprojects\mytools\mymavenrepo\junit\junit\4.11\junit-4.11.jar;E:\myprojects\mytools\mymavenrepo\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar
+[INFO ][20160918 23:08:39,070][Environment:100] Client environment:java.library.path=F:\toolsinstalldir\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:/toolsinstalldir/Java/jdk1.8.0_77/bin/../jre/bin/server;F:/toolsinstalldir/Java/jdk1.8.0_77/bin/../jre/bin;F:/toolsinstalldir/Java/jdk1.8.0_77/bin/../jre/lib/amd64;F:\toolsinstalldir\Java\jdk1.8.0_77\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;F:\toolsinstalldir\OpenVPN\bin;F:\toolsinstalldir\Git\cmd;E:\myprojects\mytools\apache-maven-3.3.9\bin;E:\Androidinstalldir\sdk\bin;;E:\companyproject\eclipse-jee-mars-2-win32-x86_64\eclipse;;.
+[INFO ][20160918 23:08:39,071][Environment:100] Client environment:java.io.tmpdir=C:\Users\smacheng\AppData\Local\Temp\
+[INFO ][20160918 23:08:39,071][Environment:100] Client environment:java.compiler=<NA>
+[INFO ][20160918 23:08:39,071][Environment:100] Client environment:os.name=Windows 7
+[INFO ][20160918 23:08:39,071][Environment:100] Client environment:os.arch=amd64
+[INFO ][20160918 23:08:39,071][Environment:100] Client environment:os.version=6.1
+[INFO ][20160918 23:08:39,071][Environment:100] Client environment:user.name=smacheng
+[INFO ][20160918 23:08:39,071][Environment:100] Client environment:user.home=C:\Users\smacheng
+[INFO ][20160918 23:08:39,071][Environment:100] Client environment:user.dir=E:\gitprojects\dubbo\04\edu-service-user
+[INFO ][20160918 23:08:39,072][ZooKeeper:438] Initiating client connection, connectString=192.168.0.11:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@43b7547d
+[INFO ][20160918 23:08:48,463][ClientCnxn$SendThread:966] Opening socket connection to server 192.168.0.11/192.168.0.11:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20160918 23:08:48,464][ClientCnxn$SendThread:849] Socket connection established to 192.168.0.11/192.168.0.11:2181, initiating session
+[INFO ][20160918 23:08:48,513][ClientCnxn$SendThread:1207] Session establishment complete on server 192.168.0.11/192.168.0.11:2181, sessionid = 0x1573dcfab400000, negotiated timeout = 30000
+[INFO ][20160918 23:08:48,514][ZkClient:449] zookeeper state changed (SyncConnected)
+[INFO ][20160918 23:08:48,515][AbstractRegistry:302]  [DUBBO] Register: dubbo://192.168.88.1:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&dubbo=2.5.0&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,getById,findUserByUserNo,deleteUserById,create&pid=7184&side=provider&timestamp=1474211318155, dubbo version: 2.5.0, current host: 127.0.0.1
+[INFO ][20160918 23:08:48,559][AbstractRegistry:325]  [DUBBO] Subscribe: provider://192.168.88.1:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&category=configurators&check=false&dubbo=2.5.0&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,getById,findUserByUserNo,deleteUserById,create&pid=7184&side=provider&timestamp=1474211318155, dubbo version: 2.5.0, current host: 127.0.0.1
+[INFO ][20160918 23:08:48,588][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url provider://192.168.88.1:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&category=configurators&check=false&dubbo=2.5.0&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,getById,findUserByUserNo,deleteUserById,create&pid=7184&side=provider&timestamp=1474211318155, urls: [empty://192.168.88.1:20880/wusc.edu.facade.user.service.PmsUserFacade?anyhost=true&application=gw-service-user&category=configurators&check=false&dubbo=2.5.0&interface=wusc.edu.facade.user.service.PmsUserFacade&methods=updateUserPwd,update,listPage,getById,findUserByUserNo,deleteUserById,create&pid=7184&side=provider&timestamp=1474211318155], dubbo version: 2.5.0, current host: 127.0.0.1
