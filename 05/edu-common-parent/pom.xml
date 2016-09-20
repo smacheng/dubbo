@@ -10,7 +10,7 @@
 	<name>edu-common-parent</name>
 	<url>http://maven.apache.org</url>
 
-	<distributionManagement>
+	<!-- <distributionManagement>
 		<repository>
 			<id>nexus-releases</id>
 			<name>Nexus Release Repository</name>
@@ -21,7 +21,7 @@
 			<name>Nexus Snapshot Repository</name>
 			<url>http://192.168.100.66:8081/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>
-	</distributionManagement>
+	</distributionManagement> -->
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
